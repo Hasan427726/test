@@ -151,16 +151,12 @@ def xxr():
     print(logo)
     print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
     print(" ══════════════════════════════════════════")
-    rk1 = '0181'
-    rk2 = '0182'
-    rk3 = '0185'
-    rk4 = '018'
-    mk1 = '0171'
-    mk2 = '0172'
-    mk3 = '0175'
-    mk4 = '017'
+    rk1 = '0171'
+    rk2 = '0172'
+    rk3 = '0175'
+    rk4 = '017'
     code = random.choice([rk1,rk2,rk3])
-    code = random.choice([mk1,mk2,mk3])                      # input(f' [{xr}■{x}] Choose : ')
+       # input(f' [{xr}■{x}] Choose : ')
     os.system('clear')
     print(logo)
     limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m10000, \x1b[38;5;208m20000, \033[0;92m50000 ] \n\033[0;95m═════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
