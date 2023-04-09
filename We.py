@@ -148,50 +148,7 @@ def banner():
  Version   {M}: {H}1.0.2\033[1;37m
 {asu}---------------------------------------------------{P}""")
 led = f"""{asu}---------------------------------------------------"""
-def login():
-        except requests.exceptions.ConnectionError:
-            print('No Net Connection')
-            exit()
-    except IOError:
-        login_x()
-def login_x():
-    try:
-        os.system('clear')
-        banner()
-        ses = requests.Session()
-        cookie = input(f'{P}Put Cookie {M}: {H}')
-        cookies = {'cookie':cookie}
-        url = 'https://www.facebook.com/adsmanager/manage/campaigns'
-        req = ses.get(url,cookies=cookies)
-        set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
-        nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
-        roq = ses.get(nek,cookies=cookies)
-        tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-        tokenw = open(".token.txt", "w").write(tok)
-        cokiew = open(".cok.txt", "w").write(cookie)
-        print(f'\n{N}Cookie Login {H}Successful {B}Run Again')
-        exit()
-    except Exception as e:
-        os.system("rm -f .token.txt")
-        os.system("rm -f .cok.txt")
-        print(f'{M}Bro Your /Cookie Expired')
-        exit()
-def menu(my_name,my_id):
-    try:
-        token = open('.token.txt','r').read()
-        cok = open('.cok.txt','r').read()
-    except IOError:
-        time.sleep(5)
-        login_x()
-    os.system('clear')
-    banner()
-    try:cek_data = requests.get("http://ip-api.com/json/").json()
-    except:cek_data = {'-'}
-    try:crazy_nilXd = cek_data["isp"]
-    except:crazy_nilXd = {'-'}
-    try:crazy_nilSu = cek_data["city"]
-    except:crazy_nilSu = {'-'}
-    print(f'{P}User City  {M}:{H} {crazy_nilSu}');print(f'{P}User Name  {M}:{H} {my_name}');print(led)
+    
     print(f'{P}[{asu}1{P}] Public Crack')
     print(f'{P}[{asu}2{P}] Public Crack {H}V2')
     print(f'{P}[{asu}3{P}] File Crack')
